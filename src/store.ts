@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import infoReducer from './infoSlice';
+import rootReducer from './infoSlice';
 
 const store = configureStore({
   reducer: {
-    info: infoReducer,
+    info: rootReducer,
   },
 });
 

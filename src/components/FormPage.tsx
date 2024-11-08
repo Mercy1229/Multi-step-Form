@@ -2,13 +2,13 @@ import { Link, Outlet } from 'react-router-dom';
 
 function FormPage() {
   return (
-    <div className="w-2/4 max-h-fit flex flex-row mx-auto bg-white py-2 ps-0 rounded-lg space-x-10">
+    <div className="w-2/3 max-h-fit flex flex-row  mx-auto bg-white py-2 ps-0 rounded-lg ">
       {/* Sidebar */}
-      <div className="bg-Desktop p-10 rounded-md ms-2">
-        <div className="flex flex-row space-x-5 my-2">
+      <div className="bg-Desktop w-80 sm:bg-mobile p-10 rounded-md ms-2 pt-16">
+        <div className="flex flex-row space-x-5 my-4">
           <div className="my-auto">
             <Link to="/">
-              <button className="border rounded-full bg-none px-3 py-1 text-white">1</button>
+              <button className="border rounded-full px-3 py-1 text-white">1</button>
             </Link>
           </div>
           <div className='w-full'>
@@ -17,7 +17,7 @@ function FormPage() {
           </div>
         </div>
         
-        <div className="flex flex-row space-x-5 my-2">
+        <div className="flex flex-row space-x-5 my-4">
           <div className="my-auto">
             <Link to="/selectplan">
               <button className="border rounded-full bg-none px-3 py-1 text-white">2</button>
@@ -29,7 +29,7 @@ function FormPage() {
           </div>
         </div>
         
-        <div className="flex flex-row space-x-5 my-2">
+        <div className="flex flex-row space-x-5 my-4">
           <div className="my-auto">
             <Link to="/addons">
               <button className="border rounded-full bg-none px-3 py-1 text-white">3</button>
@@ -41,7 +41,7 @@ function FormPage() {
           </div>
         </div>
         
-        <div className="flex flex-row space-x-5 my-2">
+        <div className="flex flex-row space-x-5 my-4">
           <div className="my-auto">
             <Link to="/summary">
               <button className="border rounded-full bg-none px-3 py-1 text-white">4</button>
@@ -54,7 +54,7 @@ function FormPage() {
         </div>
       </div>
 
-      <div className='mb-16 me-8 w-full'>
+      <div className=' px-20 w-full'>
         <Outlet />
       </div>
     </div>

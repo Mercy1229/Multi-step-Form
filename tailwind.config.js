@@ -9,7 +9,8 @@ export default {
 	  }),
   	extend: {
 		backgroundImage:{
-			'Desktop':"url('./assets/images/bg-sidebar-desktop.svg')"
+			'Desktop':"url('./assets/images/bg-sidebar-desktop.svg')",
+			'Mobile':"url('./assets/images/bg-sidebar-mobile.svg')"
 		},
 		fontFamily:{
 			ubuntu : ['Ubuntu', 'sans-serif'], 
