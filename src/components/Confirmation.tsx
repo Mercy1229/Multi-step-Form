@@ -7,6 +7,12 @@ import { Button } from "./ui/button";
 const Confirmation = () => {
   const info = useSelector((state: RootState) => state.info);
   const price=info.planInfo.payPlan=='Monthly' ? info.planInfo.monthlyPrice:info.planInfo.yearlyPrice;
+  const showData=()=>{
+    console.log('User Info');
+    console.log(info.info,info);
+    console.log(info.planInfo);
+    console.log(info.Addon);
+  }
   return (
     <div>
         <h1 className="text-3xl font-bold mt-10 font-ubuntu mb-2 text-MarineBlue">Finishing up</h1>
@@ -53,7 +59,7 @@ const Confirmation = () => {
           <Button className="bg-white hover:bg-white text-MarineBlue">Go Back</Button>
         </Link>
         <Link to="/Summary">
-          <Button className="bg-PurplishBlue">Confirm</Button>
+          <Button className="bg-PurplishBlue" onClick={showData}>Confirm</Button>
         </Link>
       </div>
     </div>
