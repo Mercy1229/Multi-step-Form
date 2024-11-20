@@ -35,10 +35,10 @@ const Confirmation = () => {
             return(
                 <div className="flex flex-col">
                 <div  className="flex flex-row bg-slate-200 p-4 rounded-s-md">
-                    <div className="flex w-60">
+                    <div className="flex w-56">
                     <p className="font-ubuntu text-gray-500 pe-2">{Addon.label}  </p>
                     </div>
-                    <div className="flex ms-48">
+                    <div className="flex ms-44 me-2">
                     <p className="font-ubuntu text-gray-500">+$ {price1} /{info.planInfo.payPlan === "Yearly" ? 'yr' : 'mo'}</p>
                 </div>
                 </div>

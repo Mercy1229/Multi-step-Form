@@ -8,6 +8,7 @@ export default {
 		back:'hsl(213, 96%, 18%)',
 	  }),
   	extend: {
+
 		backgroundImage:{
 			'Desktop':"url('./assets/images/bg-sidebar-desktop.svg')",
 			'Mobile':"url('./assets/images/bg-sidebar-mobile.svg')"

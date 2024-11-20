@@ -11,7 +11,7 @@ import Summary from './components/Summary';
 function App() {
   return (
     <Provider store={store}>
-    <div className='bg-slate-200 min-h-screen py-16'>
+    <div className='bg-slate-200 max-h-screen py-16'>
       <Router>
         <Routes>
           <Route path="/" element={<FormPage />}>
